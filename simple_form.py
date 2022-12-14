@@ -12,7 +12,7 @@ def processPost():
     msg2 = request.form['msg2']
     num1 = int(msg1)
     num2 = int(msg2)
-    msg=num1 + num2
+    msg= num1 + num2
     return render_template("result.html", message1 = msg1 , message2 = msg2 ,message = msg)
 
 if __name__ == '__main__':
